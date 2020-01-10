@@ -1,0 +1,14 @@
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\LetsMove.exe
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\LetsMove.deps.json
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\LetsMove.runtimeconfig.json
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\LetsMove.runtimeconfig.dev.json
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\LetsMove.dll
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\LetsMove.pdb
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\SOLID.dll
+D:\2020\udemyCources\Designpatterns\LetsMove\bin\Debug\netcoreapp3.1\SOLID.pdb
+D:\2020\udemyCources\Designpatterns\LetsMove\obj\Debug\netcoreapp3.1\LetsMove.csprojAssemblyReference.cache
+D:\2020\udemyCources\Designpatterns\LetsMove\obj\Debug\netcoreapp3.1\LetsMove.AssemblyInfoInputs.cache
+D:\2020\udemyCources\Designpatterns\LetsMove\obj\Debug\netcoreapp3.1\LetsMove.AssemblyInfo.cs
+D:\2020\udemyCources\Designpatterns\LetsMove\obj\Debug\netcoreapp3.1\LetsMove.csproj.CopyComplete
+D:\2020\udemyCources\Designpatterns\LetsMove\obj\Debug\netcoreapp3.1\LetsMove.dll
+D:\2020\udemyCources\Designpatterns\LetsMove\obj\Debug\netcoreapp3.1\LetsMove.pdb

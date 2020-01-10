@@ -1,0 +1,8 @@
+D:\2020\udemyCources\Designpatterns\SOLID\bin\Debug\netcoreapp3.1\SOLID.deps.json
+D:\2020\udemyCources\Designpatterns\SOLID\bin\Debug\netcoreapp3.1\SOLID.dll
+D:\2020\udemyCources\Designpatterns\SOLID\bin\Debug\netcoreapp3.1\SOLID.pdb
+D:\2020\udemyCources\Designpatterns\SOLID\obj\Debug\netcoreapp3.1\SOLID.csprojAssemblyReference.cache
+D:\2020\udemyCources\Designpatterns\SOLID\obj\Debug\netcoreapp3.1\SOLID.AssemblyInfoInputs.cache
+D:\2020\udemyCources\Designpatterns\SOLID\obj\Debug\netcoreapp3.1\SOLID.AssemblyInfo.cs
+D:\2020\udemyCources\Designpatterns\SOLID\obj\Debug\netcoreapp3.1\SOLID.dll
+D:\2020\udemyCources\Designpatterns\SOLID\obj\Debug\netcoreapp3.1\SOLID.pdb
