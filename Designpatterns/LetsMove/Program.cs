@@ -12,10 +12,11 @@ namespace LetsMove
             BeforeSRP beforeSRP = new BeforeSRP();
             beforeSRP.AddEntry("Hi, am using Udemy!");
             beforeSRP.AddEntry("You may find good resources!");
-            WriteLine(beforeSRP);
-            beforeSRP.RemoveEntry(1);
+            //WriteLine(beforeSRP);
+            //beforeSRP.RemoveEntry(1);
+            OpenCloseEntry.Start();
             beforeSRP.AddEntry("Happy code!");            
-            WriteLine(beforeSRP);
+            //WriteLine(beforeSRP);
         }
     }
 }
