@@ -8,10 +8,16 @@
     ".NETCoreApp,Version=v3.1": {
       "LetsMove/1.0.0": {
         "dependencies": {
+          "FactoryExcercise": "1.0.0",
           "SOLID": "1.0.0"
         },
         "runtime": {
           "LetsMove.dll": {}
+        }
+      },
+      "FactoryExcercise/1.0.0": {
+        "runtime": {
+          "FactoryExcercise.dll": {}
         }
       },
       "SOLID/1.0.0": {
@@ -23,6 +29,11 @@
   },
   "libraries": {
     "LetsMove/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FactoryExcercise/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

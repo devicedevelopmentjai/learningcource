@@ -1,0 +1,6 @@
+﻿A component responsible for wholesale creation of objects.
+Motivation:
+    # Object creation can be outsourced eith by seperate method or stand alone class
+    # Due to constrator overload limitation(same signature with different parameter name)
+        Point(double x, double y){}
+        Point(double rho, double theta){}

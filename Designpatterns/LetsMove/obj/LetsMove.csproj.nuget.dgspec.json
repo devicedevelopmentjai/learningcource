@@ -1,93 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2020\\udemyCources\\Designpatterns\\LetsMove\\LetsMove.csproj": {}
+    "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/LetsMove/LetsMove.csproj": {}
   },
   "projects": {
-    "D:\\2020\\udemyCources\\Designpatterns\\LetsMove\\LetsMove.csproj": {
+    "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/FactoryExcercise/FactoryExcercise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2020\\udemyCources\\Designpatterns\\LetsMove\\LetsMove.csproj",
-        "projectName": "LetsMove",
-        "projectPath": "D:\\2020\\udemyCources\\Designpatterns\\LetsMove\\LetsMove.csproj",
-        "packagesPath": "C:\\Users\\Jayakumar\\.nuget\\packages\\",
-        "outputPath": "D:\\2020\\udemyCources\\Designpatterns\\LetsMove\\obj\\",
+        "projectUniqueName": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/FactoryExcercise/FactoryExcercise.csproj",
+        "projectName": "FactoryExcercise",
+        "projectPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/FactoryExcercise/FactoryExcercise.csproj",
+        "packagesPath": "/Users/sridharbalakrishnan/.nuget/packages/",
+        "outputPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/FactoryExcercise/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jayakumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/sridharbalakrishnan/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "D:\\2020\\udemyCources\\Designpatterns\\SOLID\\SOLID.csproj": {
-                "projectPath": "D:\\2020\\udemyCources\\Designpatterns\\SOLID\\SOLID.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\2020\\udemyCources\\Designpatterns\\SOLID\\SOLID.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\2020\\udemyCources\\Designpatterns\\SOLID\\SOLID.csproj",
-        "projectName": "SOLID",
-        "projectPath": "D:\\2020\\udemyCources\\Designpatterns\\SOLID\\SOLID.csproj",
-        "packagesPath": "C:\\Users\\Jayakumar\\.nuget\\packages\\",
-        "outputPath": "D:\\2020\\udemyCources\\Designpatterns\\SOLID\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Jayakumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,7 +53,120 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/LetsMove/LetsMove.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/LetsMove/LetsMove.csproj",
+        "projectName": "LetsMove",
+        "projectPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/LetsMove/LetsMove.csproj",
+        "packagesPath": "/Users/sridharbalakrishnan/.nuget/packages/",
+        "outputPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/LetsMove/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sridharbalakrishnan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/FactoryExcercise/FactoryExcercise.csproj": {
+                "projectPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/FactoryExcercise/FactoryExcercise.csproj"
+              },
+              "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/SOLID/SOLID.csproj": {
+                "projectPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/SOLID/SOLID.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/SOLID/SOLID.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/SOLID/SOLID.csproj",
+        "projectName": "SOLID",
+        "projectPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/SOLID/SOLID.csproj",
+        "packagesPath": "/Users/sridharbalakrishnan/.nuget/packages/",
+        "outputPath": "/Users/sridharbalakrishnan/Projects/Udemy/Designpatterns/SOLID/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sridharbalakrishnan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }
