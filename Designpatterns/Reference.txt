@@ -1,1 +1,231 @@
-Hi
+public class EditorsViewModel
+    {   
+        public List<SelectListItem> MonthYear { get; set; }        
+        public string SelectedMonth { get; set; }
+        public List<SelectListItem> Bottlers { get; set; }
+        public string SelectedBottler { get; set; }
+
+        public IEnumerable<FillRate> FillRates { get; set; }
+
+    }
+    
+    
+    
+
+public ActionResult Registration()
+        {
+
+
+            EditorsViewModel model = new EditorsViewModel()
+            {
+                MonthYear = new List<SelectListItem>() {
+                new SelectListItem(){  Value = "1", Text = "2020"},
+                new SelectListItem(){  Value = "2", Text = "2019"}
+               },
+                Bottlers = new List<SelectListItem>() {
+                new SelectListItem(){  Value = "1", Text = "BMW"},
+                new SelectListItem(){  Value = "2", Text = "Suzuki"},
+                new SelectListItem(){  Value = "2", Text = "Benz"}
+               },
+                FillRates = FillRatContainer.Get(),
+                SelectedMonth = string.Empty,
+                SelectedBottler = string.Empty
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Registration(EditorsViewModel model)
+        {
+            //string[] selected = new string[] { };
+            //var data = FillRatContainer.Get();
+            //if (!string.IsNullOrWhiteSpace(model.SelectedBottler))
+            //{
+            //    selected = model.SelectedBottler.Split(',').ToArray();
+            //    data = data.Where(x => selected.Any(y => y == x.Plant)).ToList();
+            //}
+            //var colors = new List<FilterValue>() { 
+            //        new FilterValue { Id="Red", Text="Red" }
+            //        , new FilterValue { Id="White", Text="White" }
+            //};
+
+            //EditorsViewModel model1 = new EditorsViewModel()
+            //{
+            //    Colors = new List<SelectListItem>() {
+            //    new SelectListItem(){  Value = "1", Text = "Red"},
+            //    new SelectListItem(){  Value = "2", Text = "Green"}
+            //   },
+            //    ColorSelected = model.ColorSelected,
+            //    FillRates = data
+            //};
+            EditorsViewModel editmodel = new EditorsViewModel()
+            {
+                MonthYear = new List<SelectListItem>() {
+                new SelectListItem(){  Value = "1", Text = "2020"},
+                new SelectListItem(){  Value = "2", Text = "2019"}
+               },
+                Bottlers = new List<SelectListItem>() {
+                new SelectListItem(){  Value = "1", Text = "BMW"},
+                new SelectListItem(){  Value = "2", Text = "Suzuki"},
+                new SelectListItem(){  Value = "2", Text = "Benz"}
+               },
+                FillRates = FillRatContainer.Get(),
+                SelectedMonth = model.SelectedMonth,
+                SelectedBottler = model.SelectedBottler
+            };
+
+            return View(editmodel);
+        }
+        
+        
+        
+        
+        
+        
+        @using CSSWBWeb.Models
+@model EditorsViewModel
+
+@{
+    ViewData["Title"] = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Registration</h2>
+@using (Html.BeginForm())
+{
+
+    using (Html.DevExtreme().ValidationGroup())
+    {
+        var temp = !string.IsNullOrWhiteSpace(Model.SelectedMonth) ? Model.SelectedMonth.Split(',').ToArray()
+            : new string[] { };
+        <div>
+
+
+            @(Html.DevExtreme().DropDownBox()
+                        .ID("Year")
+                        .Value(temp)
+                        .ValueExpr("ID")
+                        .DisplayExpr("Text")
+                        .DataSource(Model.MonthYear
+                        )
+                        .Placeholder("Select a value...")
+                        .OnValueChanged("treeBox_valueChanged")
+                        .ContentTemplate(new TemplateName("EmbeddedTreeViewMultiple"))
+            )
+        </div>
+        @Html.HiddenFor(m => m.SelectedMonth)
+        @*<div id="treeBox"></div>*@
+
+var cars = !string.IsNullOrWhiteSpace(Model.SelectedBottler) ? Model.SelectedBottler.Split(',').ToArray()
+     : new string[] { };
+        <div>
+
+
+            @(Html.DevExtreme().DropDownBox()
+                        .ID("Bottler")
+                        .Value(cars)
+                        .ValueExpr("ID")
+                        .DisplayExpr("Text")
+                        .DataSource(Model.Bottlers
+                        )
+                        .Placeholder("Select a value...")
+                        .OnValueChanged("treeBox_valueChanged")
+                        .ContentTemplate(new TemplateName("EmbeddedTreeViewMultiple"))
+            )
+            @Html.HiddenFor(m => m.SelectedBottler)
+        </div>
+
+
+        @(Html.DevExtreme().Button().Text("Hai")
+                               .Type(ButtonType.Success)
+                               .UseSubmitBehavior(true)
+        );
+    }
+}
+
+@using (Html.DevExtreme().NamedTemplate("EmbeddedTreeViewMultiple"))
+{
+    @(Html.DevExtreme().TreeView()
+     .DataSource(new JS(@"component.option(""dataSource"")"))
+     .KeyExpr("Text")
+     .DisplayExpr("Text")
+     .ItemsExpr("Items")
+     .ShowCheckBoxesMode(TreeViewCheckBoxMode.SelectAll)
+     .ExpandedExpr("Expanded")
+     .ParentIdExpr("CategoryId")
+     .DataStructure(TreeViewDataStructure.Plain)
+     .SelectionMode(NavSelectionMode.Multiple)
+     .SelectNodesRecursive(false)
+     .SelectByClick(true)
+     .OnSelectionChanged(@<text>
+                function(args) {
+                var nodes = args.component.getNodes(),
+                value = getSelectedItemsKeys(nodes);
+                component.option("value", value);
+                if($('#Year').hasClass('dx-dropdowneditor-active'))
+                {
+                    $("#SelectedMonth").val(value);
+                }
+                if($('#Bottler').hasClass('dx-dropdowneditor-active'))
+                {
+                    $("#SelectedBottler").val(value);
+                }
+                }
+    </text>)
+.Height(235)
+.OnItemSelectionChanged(@<text>
+            function(args) {
+
+            var nodes = args.component.getNodes(),
+            value = getSelectedItemsKeys(nodes);
+            component.option("value", value);
+            if($('#Year').hasClass('dx-dropdowneditor-active'))
+            {
+                $("#SelectedMonth").val(value);
+            }
+            if($('#Bottler').hasClass('dx-dropdowneditor-active'))
+            {
+                $("#SelectedBottler").val(value);
+            }
+
+            }
+</text>)
+.OnContentReady(@<text>
+                function(args) {
+                syncTreeViewSelection(args.component, component.option("value"));
+                }
+</text>)
+    )
+}
+<script>
+    function syncTreeViewSelection(treeView, value) {
+        if (!value) {
+            treeView.unselectAll();
+            return;
+        }
+
+        value.forEach(function (key) {
+            treeView.selectItem(key);
+        });
+    }
+
+    function getSelectedItemsKeys(items) {
+        var result = [];
+        items.forEach(function (item) {
+            if (item.selected) {
+                result.push(item.key);
+            }
+            if (item.items.length) {
+                result = result.concat(getSelectedItemsKeys(item.items));
+            }
+        });
+        return result;
+    }
+
+    function treeBox_valueChanged(e) {
+        var $treeView = e.component.content().find(".dx-treeview");
+        if ($treeView.length) {
+            syncTreeViewSelection($treeView.dxTreeView("instance"), e.value);
+        }
+    }
+</script>
